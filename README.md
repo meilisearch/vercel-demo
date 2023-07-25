@@ -21,7 +21,11 @@
 
 A website that lets you know where to watch a movie built on [Next.js](https://nextjs.org/) and [Meilisearch](https://www.meilisearch.com), deployed on [Vercel](https://vercel.com/) with the [Meilisearch + Vercel integration](https://vercel.com/integrations/meilisearch).
 
--- todo add picture --
+<p align="center">
+  <a href="https://where2watch.meilisearch.com/" target="_blank">
+    <img src="https://github.com/meilisearch/meilisearch/blob/2dfbb6813ab60b16a97e2fed234bb2dd789a1a25/assets/demo-dark.gif" alt="A dark colored application for finding movies screening near the user">
+  </a>
+</p>
 
 ## Deployment
 - Use the deploy button below and follow the instructions
