@@ -32,7 +32,7 @@ A website that lets you know where to watch a movie built on [Next.js](https://n
 - After the project is successfully deployed, verify that your Meilisearch credentials have been automatically added to Vercel
 - Then, proceed to redeploy the project in Vercel's dashboard so that it can access the newly set Meilisearch credentials
 
--- todo add deploy button --
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmeilisearch%2Fvercel-demo&project-name=meilisearch-starter-demo&repository-name=meilisearch-starter-demo&integration-ids=oac_rwEl59xztJi8dRne84Aqaw1r)
 
 ## Demo
 
