@@ -1,0 +1,46 @@
+<p align="center">
+  <a href="https://www.meilisearch.com/" target="_blank">
+    <img src="https://raw.githubusercontent.com/meilisearch/meilisearch/main/assets/logo.svg" alt="Meilisearch" width="200" height="200" />
+  </a>
+</p>
+
+<h1 align="center">Meilisearch + Vercel demo</h1>
+
+<h4 align="center">
+  <a href="https://www.meilisearch.com.">Website</a> |
+  <a href="https://www.meilisearch.com/cloud/">Meilisearch Cloud</a> |
+  <a href="https://blog.meilisearch.com/">Blog</a> |
+  <a href="https://www.meilisearch.com/docs/">Documentation</a> |
+  <a href="https://discord.meilisearch.com/">Discord</a>
+</h4>
+
+<p align="center">
+  <a href="https://github.com/meilisearch/demo-movies/blob/main/LICENCE"><img src="https://img.shields.io/badge/license-MIT-informational" alt="License"></a>
+</p>
+<br/>
+
+A website that lets you know where to watch a movie built on [Next.js](https://nextjs.org/) and [Meilisearch](https://www.meilisearch.com), deployed on [Vercel](https://vercel.com/) with the [Meilisearch + Vercel integration](https://vercel.com/integrations/meilisearch).
+
+-- todo add picture --
+
+## Deployment
+- Use the deploy button below and follow the instructions
+- After the project is successfully deployed, verify that your Meilisearch credentials have been automatically added to Vercel
+- Then, proceed to redeploy the project in Vercel's dashboard so that it can access the newly set Meilisearch credentials
+
+-- todo add deploy button --
+
+## Demo
+
+https://where2watch.meilisearch.com/
+
+## Vercel + Meilisearch Integration
+
+https://vercel.com/integrations/meilisearch
+
+## Tech Stack
+
+- [Next.js](https://nextjs.org/)
+- [Styled Components](https://styled-components.com/)
+- [Meilisearch](https://www.meilisearch.com)
+- [Vercel](https://vercel.com/)

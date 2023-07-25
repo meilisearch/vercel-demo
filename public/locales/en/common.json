@@ -1,0 +1,26 @@
+{
+  "title": "Where to Watch",
+  "meta": {
+    "description": ""
+  },
+  "connexionFailed": "Connexion to MeiliSearch failed",
+  "movies": "Movies",
+  "results": "Results",
+  "whatsTrending": "What’s Trending",
+  "synopsis": "Synopsis",
+  "overview": "Overview",
+  "whereToWatch": "Where to Watch",
+  "cast": "Cast",
+  "buy": "Buy",
+  "rent": "Rent",
+  "stream": "Stream",
+  "notFoundTitle": "Page not found",
+  "notFoundDescription": "We can’t seem to find the page you’re looking for.",
+  "notFoundCta": "Bring me home",
+  "processingTime": "in {{processingTime}}ms",
+  "noProviderFound": "Sorry, no provider currently offers this program 😢",
+  "settings": "Settings",
+  "appearance": "Appearance",
+  "countryPreference": "Country preference",
+  "poweredBy": "Powered by"
+}
