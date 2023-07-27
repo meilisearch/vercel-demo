@@ -24,7 +24,7 @@ const Wrapper = styled.div`
   }
 `
 
-const Home = ({ host, apiKey, needsIndexing }) => {
+const Home = ({ host, apiKey }) => {
   const [localStorageCountry, setLocalStorageCountry] =
     useLocalStorage('country-preference')
   const { t } = useTranslation('common')
@@ -75,7 +75,7 @@ const Home = ({ host, apiKey, needsIndexing }) => {
   if (!host || !apiKey) return <div>{t('connexionFailed')}</div>
 
   return (
-    <ClientProvider value={{ client, setClient, needsIndexing }}>
+    <ClientProvider value={{ client, setClient }}>
       <LanguageProvider
         value={{ selectedLanguage, setSelectedLanguage: setSelectedCountry }}
       >
