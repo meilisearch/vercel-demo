@@ -15,14 +15,20 @@ import { LanguageProvider } from 'context/LanguageContext'
 import useLocalStorage from 'hooks/useLocalStorage'
 import DocumentIndexer from 'components/DocumentIndexer'
 
-const MEILISEARCH_URL = process.env.MEILISEARCH_URL || 'http://0.0.0.0:7700'
-const MEILISEARCH_SEARCH_KEY = process.env.MEILISEARCH_SEARCH_KEY || 'searchKey'
+const MEILISEARCH_URL = process.env.MEILISEARCH_URL
+const MEILISEARCH_SEARCH_KEY = process.env.MEILISEARCH_SEARCH_KEY
 
 const Wrapper = styled.div`
   @media (min-width: ${get('breakpoints.desktop')}) {
     padding: 0 50px 50px;
   }
 `
+
+if (!process.env.MEILISEARCH_URL || !process.env.MEILISEARCH_SEARCH_KEY) {
+  throw new Error(
+    'No Meilisearch host or key found. Please set your credentials.'
+  )
+}
 
 const Home = ({ host, apiKey }) => {
   const [localStorageCountry, setLocalStorageCountry] =
