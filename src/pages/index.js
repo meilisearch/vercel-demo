@@ -26,7 +26,7 @@ const Wrapper = styled.div`
 
 if (!process.env.MEILISEARCH_URL || !process.env.MEILISEARCH_SEARCH_KEY) {
   throw new Error(
-    'No Meilisearch host or key found. Please set your credentials.'
+    'Missing Meilisearch host or API key. Check your application environment variables.'
   )
 }
 
