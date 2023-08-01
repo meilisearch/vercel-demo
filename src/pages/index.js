@@ -15,8 +15,8 @@ import { LanguageProvider } from 'context/LanguageContext'
 import useLocalStorage from 'hooks/useLocalStorage'
 import DocumentIndexer from 'components/DocumentIndexer'
 
-const MEILISEARCH_URL = process.env.MEILISEARCH_URL || 'http://0.0.0.0:7700'
-const MEILISEARCH_SEARCH_KEY = process.env.MEILISEARCH_SEARCH_KEY || 'searchKey'
+const MEILISEARCH_URL = process.env.MEILISEARCH_URL
+const MEILISEARCH_SEARCH_KEY = process.env.MEILISEARCH_SEARCH_KEY
 
 const Wrapper = styled.div`
   @media (min-width: ${get('breakpoints.desktop')}) {
@@ -24,7 +24,13 @@ const Wrapper = styled.div`
   }
 `
 
-const Home = ({ host, apiKey, needsIndexing }) => {
+if (!process.env.MEILISEARCH_URL || !process.env.MEILISEARCH_SEARCH_KEY) {
+  throw new Error(
+    'Missing Meilisearch host or API key. Check your application environment variables.'
+  )
+}
+
+const Home = ({ host, apiKey }) => {
   const [localStorageCountry, setLocalStorageCountry] =
     useLocalStorage('country-preference')
   const { t } = useTranslation('common')
@@ -75,7 +81,7 @@ const Home = ({ host, apiKey, needsIndexing }) => {
   if (!host || !apiKey) return <div>{t('connexionFailed')}</div>
 
   return (
-    <ClientProvider value={{ client, setClient, needsIndexing }}>
+    <ClientProvider value={{ client, setClient }}>
       <LanguageProvider
         value={{ selectedLanguage, setSelectedLanguage: setSelectedCountry }}
       >

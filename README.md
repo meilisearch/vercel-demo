@@ -28,9 +28,10 @@ A website that lets you know where to watch a movie built on [Next.js](https://n
 </p>
 
 ## Deployment
-- Use the deploy button below and follow the instructions
-- After the project is successfully deployed, verify that your Meilisearch credentials have been automatically added to Vercel
-- Then, proceed to redeploy the project in Vercel's dashboard so that it can access the newly set Meilisearch credentials
+
+1. Click on the 'Deploy' button below and follow the instructions
+2. The deployment will fail because Meilisearch has not finished initializing. Please ensure your Meilisearch credentials have been automatically added to Vercel
+3. Once the credentials are correctly set, proceed to **redeploy** the project from Vercel's dashboard to ensure it can access the newly set Meilisearch credentials
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmeilisearch%2Fvercel-demo&project-name=meilisearch-starter-demo&repository-name=meilisearch-starter-demo&integration-ids=oac_rwEl59xztJi8dRne84Aqaw1r)
 
