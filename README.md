@@ -7,11 +7,11 @@
 <h1 align="center">Meilisearch + Vercel demo</h1>
 
 <h4 align="center">
-  <a href="https://www.meilisearch.com.">Website</a> |
-  <a href="https://www.meilisearch.com/cloud/">Meilisearch Cloud</a> |
-  <a href="https://blog.meilisearch.com/">Blog</a> |
-  <a href="https://www.meilisearch.com/docs/">Documentation</a> |
-  <a href="https://discord.meilisearch.com/">Discord</a>
+  <a href="https://www.meilisearch.com/?utm_campaign=vercel-demo&utm_source=github">Website</a> |
+  <a href="https://www.meilisearch.com/cloud?utm_campaign=vercel-demo&utm_source=github">Meilisearch Cloud</a> |
+  <a href="https://blog.meilisearch.com/?utm_campaign=vercel-demo&utm_source=github">Blog</a> |
+  <a href="https://www.meilisearch.com/docs/?utm_campaign=vercel-demo&utm_source=github">Documentation</a> |
+  <a href="https://discord.meilisearch.com/?utm_campaign=vercel-demo&utm_source=github">Discord</a>
 </h4>
 
 <p align="center">
@@ -37,7 +37,7 @@ A website that lets you know where to watch a movie built on [Next.js](https://n
 
 ## Demo
 
-https://where2watch.meilisearch.com/
+[https://where2watch.meilisearch.com/](https://where2watch.meilisearch.com/?utm_campaign=vercel-demo&utm_source=github)
 
 ## Vercel + Meilisearch Integration
 
@@ -45,7 +45,7 @@ https://vercel.com/integrations/meilisearch
 
 ## Tech Stack
 
+- [Meilisearch](https://www.meilisearch.com/?utm_campaign=vercel-demo&utm_source=github)
 - [Next.js](https://nextjs.org/)
 - [Styled Components](https://styled-components.com/)
-- [Meilisearch](https://www.meilisearch.com)
 - [Vercel](https://vercel.com/)
