@@ -24,12 +24,6 @@ const Wrapper = styled.div`
   }
 `
 
-if (!process.env.MEILISEARCH_URL || !process.env.MEILISEARCH_SEARCH_KEY) {
-  throw new Error(
-    'Missing Meilisearch host or API key. Check your application environment variables.'
-  )
-}
-
 const Home = ({ host, apiKey }) => {
   const [localStorageCountry, setLocalStorageCountry] =
     useLocalStorage('country-preference')
@@ -111,6 +105,11 @@ const Home = ({ host, apiKey }) => {
 }
 
 export const getStaticProps = async ({ locale }) => {
+  if (!MEILISEARCH_URL || !MEILISEARCH_SEARCH_KEY)
+    throw new Error(
+      'Missing Meilisearch host or API key. Check your application environment variables.'
+    )
+
   return {
     props: {
       host: MEILISEARCH_URL,
